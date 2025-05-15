@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fab fa-youtube"></i> YouTube Downloader</h1>
+            <p>Paste your YouTube video link and download with ease!</p>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="videoUrl" placeholder="Enter YouTube Video URL">
+            <button id="fetchVideo">Get Video</button>
+        </div>
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Fetching video details...</p>
+        </div>
+
+        <div class="video-info" id="videoInfo">
+            <div class="thumbnail">
+                <img id="videoThumbnail" src="" alt="Video Thumbnail">
+            </div>
+            <div class="details">
+                <h2 id="videoTitle">Video Title</h2>
+                <div class="download-options" id="downloadOptions">
+                    <!-- Download buttons will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            <p>Invalid URL or error fetching video. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
